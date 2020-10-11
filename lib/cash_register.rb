@@ -12,13 +12,13 @@ class CashRegister
     @total += price * quantity
     #items test
     quantity.times do
-      @items << title
+    @items << title
     end
   end
 
   def apply_discount()
     @total -= (@total * @discount.to_f / 100).to_i
-      if @discount != 0
+      if @discount = 0
         "There is no discount to apply."
       else
         "After the discount, the total comes to $#{@total}."
